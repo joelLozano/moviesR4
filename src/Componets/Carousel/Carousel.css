@@ -1,0 +1,13 @@
+.container-carousel {
+    display: flex;
+}
+
+.container-image img {
+    width: 100vw;
+    height: 400px;
+}
+
+.container-image:hover {
+    transition: transform 0.5s ease-in-out;
+}
+
