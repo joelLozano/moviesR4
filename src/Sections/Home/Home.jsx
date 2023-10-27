@@ -1,4 +1,5 @@
 import Portada from "../Portada/Portada.jsx"
+import ListaPeliculas from "../ListaPeliculas/ListaPeliculas.jsx"
 
 export default function Home() {
     return(
@@ -6,7 +7,7 @@ export default function Home() {
         {/* Menu */}
         {/* portada - carrucel */}
         <Portada />
-        {/* Lista de peliculas */}
+        <ListaPeliculas />
         {/* footer */}
     </>
     )

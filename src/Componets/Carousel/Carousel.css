@@ -1,13 +1,6 @@
-.container-carousel {
-    display: flex;
-}
-
-.container-image img {
-    width: 100vw;
+.carousel-slider {
     height: 400px;
 }
-
-.container-image:hover {
-    transition: transform 0.5s ease-in-out;
+.carousel .slide img {
+    height: 400px;
 }
-
