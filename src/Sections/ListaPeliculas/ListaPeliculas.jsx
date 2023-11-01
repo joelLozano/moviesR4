@@ -1,8 +1,23 @@
-import React from 'react'
+import { useState, useEffect} from 'react'
 import CardComponent from '../../Componets/Cards/Card'
 
 export default function ListaPeliculas() {
 
+    const [search, setSearch] = useState('')
+    const [peliculas, setPeliculas] = useState([])
+
+    useEffect(() => {
+        fetch('https://api-pelis-back.onrender.com/comedia')
+        .then(response => response.json())
+        .then(data => {
+            setPeliculas(data.peliculas)
+        })
+    }, [])
+
+    const handleSearch = (e) => {
+        //console.log(e.target.value)
+        setSearch(e.target.value)
+    }
 
     let pelis = [
         {
@@ -37,7 +52,7 @@ export default function ListaPeliculas() {
     <div className="container">
         <div className="row">
             <div className="col d-flex justify-content-center">
-                <input type="text" placeholder='search' />
+                <input type="text" placeholder='search' onChange={handleSearch}/>
             </div>
         </div>
 

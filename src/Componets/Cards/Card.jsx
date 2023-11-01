@@ -18,7 +18,7 @@ export default function CardComponent(props) {
   return (
     <>
       <div className="card-movie backgroudPurple">
-        <div>
+        <div >
           <img className="card-image" src={props.portada} alt="" />
          <div className="card-title-custom">
          <h1 className="titles-custom">{props.title}</h1>
