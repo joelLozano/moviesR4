@@ -42,9 +42,9 @@ export default function ListaPeliculas() {
         </div>
 
         <div className="row mt-5">
-            { pelis.map((item) => {
+            { pelis.map((item, index) => {
                 return (
-                    <div className="col mt-5">
+                    <div className="col-3 mt-5 mr-2" key={index}>
                         <CardComponent portada={item.portada} title={item.title} description={item.description} />
                     </div>
                 )

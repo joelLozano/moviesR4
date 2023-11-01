@@ -9,3 +9,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Home /> 
   </React.StrictMode>,
 )
+
+
+// importaciones de react o librerias (dependencias)
+// importaciones de componentes
+// importaciones de estilos

@@ -1,0 +1,29 @@
+.card-movie {
+    border-radius: 16px;
+}
+
+.card-movie div {
+    margin: 5px;
+}
+.card-movie:hover{
+    background-color: rgba(0,0,0,0.9);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.card-image {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.icon-heart {
+    color: red;
+}
+
+.icon-heart-empty {
+    color: white;
+}
+
+.card-title-custom {
+    display: flex;
+    justify-content: space-between;
+}

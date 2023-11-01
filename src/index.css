@@ -8,7 +8,15 @@ body {
 }
 
 .backgroudPurple {
+  background-color: #31113a;
+}
+
+.backgroudDarkPurple {
   background-color: #451952;
+}
+
+.backgroudDarkPink {
+  background-color: #862549;
 }
 
 /* Encabezados */
@@ -17,18 +25,20 @@ body {
   color: #AE445A;
 }
 
-h2 {
+.h2-custom {
     color: #AE445A;
 }
 
-h3 {
+.h3-custom {
     color: #AE445A;
 }
 
-.note {
+.titles-custom {
   color: #F39F5A;
+  font-size: 18px;
 }
 
-p {
-  color: #E8BCB9
+.text-custom {
+  color: #E8BCB9;
+  font-size: 15px;
 }
