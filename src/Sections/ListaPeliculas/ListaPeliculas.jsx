@@ -27,7 +27,6 @@ export default function ListaPeliculas() {
         if (e.target.value == '') {
             setPeliculasFilter(peliculas)
         } else {
-            //console.log(e.target.value)
         setSearch(e.target.value) // actualiza el estado de search - guarda lo que escribi 
         let pelisFilter = peliculas.filter((peli) => peli.titulo.toLowerCase().includes(search.toLowerCase()))
         setPeliculasFilter(pelisFilter)
