@@ -1,13 +1,14 @@
 import Portada from "../Portada/Portada.jsx"
 import ListaPeliculas from "../ListaPeliculas/ListaPeliculas.jsx"
 import { Outlet } from "react-router-dom"
-
+import Menu from "../Menu/Menu.jsx"
 export default function Home() {
     return(
     <>
         {/* Menu */}
+        <Menu/>
         {/* portada - carrucel */}
-        <Portada />
+        {/* <Portada /> */}
         {/* <ListaPeliculas /> */}
         <Outlet />
         {/* footer */}

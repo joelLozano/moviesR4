@@ -6,6 +6,7 @@ import { createBrowserRouter,RouterProvider, Route, Link,} from "react-router-do
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
+import MovieDetail from './Sections/PeliculaDetalle/MovieDetail.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/comedia",
-        element: <ListaPeliculas />
+        element: <ListaPeliculas genero='comedia' key="comedia" />
+      },
+      {
+        path: "/independientes",
+        element: <ListaPeliculas genero='independientes' key="independientes" />
+      },
+      {
+        path: "/clasicas",
+        element: <ListaPeliculas genero='clasicas' key="clasicas" />
       },
       {
         path: "/ciencia-ficcion",
@@ -27,6 +36,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: "/detalle/:titulo",
+    element: <MovieDetail />,
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
