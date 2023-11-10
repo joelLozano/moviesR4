@@ -1,11 +1,11 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import './MovieDetail.css'
 
 export default function MovieDetail(props) {
 
     const location = useLocation()
     const movie = location.state
-    console.log(location)
   return (
     <>
     <div className="container">
@@ -17,14 +17,17 @@ export default function MovieDetail(props) {
 
         <div className="row">
             <div className="col">
-                <img src="" alt="" />
+                <img src={movie.portada} className='detail-moview-img' alt="" />
             </div>
 
             <div className="col">
-                <h2>Titulo de la pelicula</h2>
-                <ul>
-                    <li>Actores 1</li>
-                    <li>Actores 2</li>
+                <h2>{movie.titulo} </h2>
+                
+    
+                <ul className='text-custom'>
+                {movie.actores.map((actor, index) => {
+                    return <li>{actor}</li>
+                })}
                 </ul>
                 <p>duracion </p>
                 <p>fecha de estreno </p>

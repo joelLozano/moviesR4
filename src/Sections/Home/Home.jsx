@@ -5,7 +5,6 @@ import Menu from "../Menu/Menu.jsx"
 export default function Home() {
     return(
     <>
-        {/* Menu */}
         <Menu/>
         {/* portada - carrucel */}
         {/* <Portada /> */}

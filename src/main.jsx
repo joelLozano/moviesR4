@@ -33,12 +33,12 @@ const router = createBrowserRouter([
       {
         path: "/ciencia-ficcion",
         element: <h1>Hola soy ciencia ficcion </h1>
+      },
+      {
+        path: "/:genero/:titulo",
+        element: <MovieDetail />,
       }
     ]
-  },
-  {
-    path: "/detalle/:titulo",
-    element: <MovieDetail />,
   }
 ])
 
