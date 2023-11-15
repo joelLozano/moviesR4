@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import EmptyImg from "../../assets/empty.jpeg";
+import { Link } from 'react-router-dom';
 import "./Card.css";
 
 export default function CardComponent(props) {
@@ -38,7 +39,9 @@ export default function CardComponent(props) {
           <p className="text-custom">{props.description}</p>
 
           <div className="card-play">
-            <span>Play</span>
+          <Link to={`/${props.item.genero}/${props.item.titulo}`} state={props.item}>
+            <button className="btn btn-primary">PLAY</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -58,9 +58,9 @@ export default function ListaPeliculas(props) {
                     { peliculasFilter.map((item, index) => {
                         return (
                             <div className="col-3 mt-5 mr-2" key={index}>
-                                <Link to={`/${item.genero}/${item.titulo}`} state={item}>
-                                    <CardComponent portada={item.portada} title={item.titulo} description={item.sinopsis} />
-                                </Link>
+                                {/* <Link to={`/${item.genero}/${item.titulo}`} state={item}> */}
+                                    <CardComponent portada={item.portada} title={item.titulo} description={item.sinopsis} item={item} />
+                                {/* </Link> */}
                             </div>
                         )
                     })}
